@@ -93,7 +93,7 @@
                     try {
                         Class.forName("org.mariadb.jdbc.Driver");
                         conn = DriverManager.getConnection(
-                            "jdbc:mariadb://localhost:3306/boarddb",
+                            "jdbc:mariadb://10.0.11.58:3306/boarddb",
                             "boarduser", "1234"
                         );
 
