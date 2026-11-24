@@ -12,7 +12,7 @@
  
     try {
         Class.forName("org.mariadb.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mariadb://192.168.111.137:3306/boarddb", "boarduser", "1234");
+        conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/boarddb", "boarduser", "1234");
  
         String sql = "INSERT INTO board (title, writer, content) VALUES (?, ?, ?)";
         pstmt = conn.prepareStatement(sql);
